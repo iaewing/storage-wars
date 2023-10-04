@@ -1,0 +1,13 @@
+diff --git a/components/ContainerList.tsx b/components/ContainerList.tsx
+index 42f45e0..a5053dc 100644
+--- a/components/ContainerList.tsx
++++ b/components/ContainerList.tsx
+@@ -24,7 +24,7 @@ const FlatListBasics = () => {
+           { key: 'Container 3' },
+           { key: 'Container 4' },
+         ]}
+-        renderItem={(item)} => (<Container {item.key} />)
++        renderItem={({ item }) => (<Container {item.key} />)}
+       />
+     </View>
+ 
